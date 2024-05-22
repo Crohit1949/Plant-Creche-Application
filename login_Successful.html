@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-image {
+            background-image: url(screen7.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-start; 
+            padding: 50px; 
+        }
+
+        .header h1 {
+            font-size: 80px;
+            font-family: 'Sofia Pro', sofia-pro;
+            margin: 0; 
+            color: #194923;
+        }
+
+        .sub-heading {
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh; 
+            color: black;
+            font-family: 'Sofia Pro', sofia-pro;
+        }
+
+        .sub-heading h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            display: block; 
+            margin: 0 auto; 
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #194923; 
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: 'Sofia Pro', sofia-pro;
+        }
+
+        button:hover {
+            background-color: #194923; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="header">
+            <h1>Congratulations!</h1>
+        </div>
+        <div class="sub-heading">
+            <h2>Your new password has been set.<br>You can login to your account</h2>
+        </div>
+        <button type="button">Continue to home</button>
+    </div>
+</body>
+</html>

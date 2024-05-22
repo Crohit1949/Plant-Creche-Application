@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400&display=swap">
+    <title></title>
+    <style>
+        body {
+            background-color: #112317;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sofia Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2vw; /* Responsive font size */
+            animation: fadeOut 5s forwards; /* Add fade-out animation */
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ... Your existing styles ... */
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            body {
+                flex-direction: column;
+            }
+
+            header {
+                font-size: 4vw; /* Adjusted for smaller screens */
+            }
+
+            /* ... Your existing styles for smaller screens ... */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="Logo.png" alt="Your Logo">
+    </header>
+
+    <script>
+        // Add a delay before redirecting
+        setTimeout(function () {
+            window.location.href = "Splash_Screen2.html";
+        }, 7000); // 5000 milliseconds (5 seconds)
+    </script>
+</body>
+
+</html>
